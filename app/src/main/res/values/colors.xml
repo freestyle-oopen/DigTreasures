@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6A808080</color>
+    <color name="colorPrimaryDark">#6B808080</color>
+    <color name="colorAccent">#5C7E7E7E</color>
+    <color name="colorButton">#79FFFFFF</color>
+    <color name="green">#4CAF50</color>
+    <color name="whilecolor">#808080</color>
+    <color name="blackcolor">#000000</color>
+    <color name="fasong">#802196F3</color>
+    <color name="wabao">#809C27B0</color>
+    <color name="chenggongwb">#804CAF50</color>
+    <color name="baise">#F6EDED</color>
+    <color name="button_def">#03A9F4</color>
+    <color name="button_clike">#0075AA</color>
+</resources>

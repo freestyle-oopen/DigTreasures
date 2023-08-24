@@ -1,0 +1,49 @@
+ apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.trust.walletcore.example"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        signingConfig {
+            keyAlias 'lznewsapp'
+            keyPassword 'lzrb2862'
+            storeFile file('com.lzrb.lznews.keystore')
+            storePassword 'lzrb2862'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/bugly-4.1.9.2.aar')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'org.web3j:core:4.8.7'
+    implementation 'org.web3j:core:4.8.7-android'
+
+    implementation "com.trustwallet:wallet-core:2.6.3"
+    implementation 'io.github.novacrypto:BIP39:0.1.9'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.8.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+
+
+}

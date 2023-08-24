@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/testId"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:text="开始"
+            android:onClick="imputWall"
+            android:textColor="@color/colorButton" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@color/colorAccent"
+            android:onClick="mode"
+            android:text="夜"
+            android:textColor="@color/colorButton" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@color/colorAccent"
+            android:onClick="test"
+            android:text="测试"
+            android:textColor="@color/colorButton" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wabaosuccess_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="deleteSuccessData"
+                android:text="成功挖宝：0"
+                android:textColor="@color/chenggongwb" />
+
+            <TextView
+                android:id="@+id/wabao_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="挖宝：0"
+                android:textColor="@color/wabao" />
+
+            <TextView
+                android:id="@+id/fasong_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送：0"
+                android:textColor="@color/fasong" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/xiancheng_count"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:digits="1234567890"
+            android:hint="线程数"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/whilecolor"
+            android:textColorHint="@color/whilecolor"
+            android:textCursorDrawable="@color/whilecolor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:id="@+id/tv_start_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:textColor="#00BCD4" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/zhuangtai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:textSize="10sp"
+            android:textColor="#000000" />
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDark" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/typetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络返回结果："
+        android:textColor="@color/whilecolor" />
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0个/秒"
+        android:textColor="@color/wabao" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="平均: "
+        android:textColor="@color/wabao" />
+    <TextView
+        android:id="@+id/tv_average_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0个/秒"
+        android:textColor="@color/wabao" />
+</LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/net_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:textSize="10sp"
+            android:textColor="@color/whilecolor" />
+
+    </ScrollView>
+</LinearLayout>
